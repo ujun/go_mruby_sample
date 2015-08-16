@@ -1,19 +1,20 @@
 class Sample
 
-  attr_accessor :var1
-
-  def initialize (var1)
-    @var1 = var1
+  def initialize
   end
 
-  def sample_var 
-    return @var1
+  def print_pwd
+    File.open("/etc/passwd", "r") do |file|
+      # file.each_line do |line|
+      #   puts line
+      # end
+      while(line = file.gets)
+        puts line
+      end
+    end
   end
 
-  def sample_var2
-    return sample_var + "dodon"
-  end
 end
 
-sample = Sample.new("Hello, world!!")
-sample.sample_var2()
+pwd = Sample.new()
+pwd.print_pwd
