@@ -1,7 +1,7 @@
 package main
 
 import (
-  "github.com/mitchellh/go-mruby"
+  "github.com/ujun/go-mruby"
 )
 
 func main() {

@@ -18,3 +18,5 @@ end
 
 pwd = Sample.new()
 pwd.print_pwd
+
+piyo
