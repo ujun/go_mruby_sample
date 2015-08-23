@@ -4,13 +4,8 @@ class Sample
   end
 
   def print_pwd
-    File.open("/etc/passwd", "r") do |file|
-      # file.each_line do |line|
-      #   puts line
-      # end
-      while(line = file.gets)
-        puts line
-      end
+    100.times do |num|
+      puts num.to_s + " | " + (0...8).map{ (65 + rand(26)).chr }.join
     end
   end
 
@@ -18,5 +13,3 @@ end
 
 pwd = Sample.new()
 pwd.print_pwd
-
-piyo
