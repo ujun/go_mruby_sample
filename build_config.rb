@@ -30,6 +30,5 @@ MRuby::Build.new do |conf|
 
   # user-defined GEMs
   conf.gem :git => 'https://github.com/iij/mruby-io.git'
-  conf.gem :git => 'https://github.com/matsumoto-r/mruby-sleep.git'
-  # conf.gem :git => 'https://github.com/mattn/mruby-sqlite3.git'
+  conf.gem :git => 'https://github.com/mattn/mruby-sqlite3.git'
 end
